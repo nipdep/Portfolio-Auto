@@ -1,0 +1,50 @@
+plugins:
+  - jekyll-assets
+
+# site settings
+title: Personal
+subtitle: Portfolio
+email: noname@gmail.com
+description: 'Innovating with Intelligence: My AI Odyssey.'
+baseurl: "/forty-jekyll-theme" # the subpath of your site, e.g. /blog
+url: # the base hostname & protocol for your site
+author:
+street_address: Wethara
+city: Polgasowita
+state: Western
+zip_code: 10320
+country: Sri Lanka
+phone: (+94) 71 190 8140
+
+# homepage tiles
+tiles-source: pages # accepts "posts" or "pages"
+tiles-count: 6
+
+# social settings (key must match name of font awesome icon)
+# see https://fontawesome.com/icons?d=gallery&p=2&s=brands
+# Icons are not shown if value is empty
+# You need to restart jekyll for changes to have an effect
+socials:
+  GitHub: https://github.com/nipdep
+  GitLab:
+  Google-Plus: https://plus.google.com/u/0/+AndrewBanchich
+  Instagram:
+  LinkedIn: https://www.linkedin.com/in/nipun-deelaka/?originalSubdomain=lk
+  Twitter: https://twitter.com/andrewbanchich
+  Facebook:
+  Slack:
+
+# build settings
+markdown: kramdown
+
+sass:
+  style: compressed
+
+assets:
+  baseurl: /assets
+
+exclude:
+- "*.gemspec"
+- LICENSE.md
+- CONTRIBUTING.md
+- README.md 
