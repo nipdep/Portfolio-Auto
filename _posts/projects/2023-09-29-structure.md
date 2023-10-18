@@ -5,7 +5,7 @@ description: "template for project definition"
 image: assets/images/pic06.jpg
 categories: "projects"
 type: "projects"
-# permalink: /:categories/:title
+permalink: /:categories/:title
 ---
 
 <div id="main">

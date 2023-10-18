@@ -1,0 +1,51 @@
+title: Machine Learning Engineer
+company: Google
+employment_type: Full-time
+employment_period: 2020-2021
+location: Mountain View, CA
+
+description: "As a Machine Learning Engineer at XYZ Tech Solutions, I lead the development of machine learning models for natural language processing tasks. My responsibilities include data preprocessing, model development, and performance optimization. I collaborate with cross-functional teams to implement ML solutions for various projects."
+projects:
+  - title: "Sentiment Analysis"
+    description: "This project aimed to develop a sentiment analysis model with an accuracy improvement of 15%"
+    technologies:
+      - python
+      - django
+      - keras
+    methodologies: 
+      - agile
+      - scrum
+      - kanban  
+    archievement:
+      - "Developed a sentiment analysis model with an accuracy improvement of 15%"
+      - "Led a team of data scientists in building a recommendation system that increased user engagement by 20%"
+  - title: "Recommendation System"
+    description: "This project aimed to develop a recommendation system that increased user engagement by 20%"
+    technologies:
+      - python
+      - django
+      - keras
+    methodologies: 
+      - agile
+      - scrum
+      - kanban  
+    archievement:
+      - "Developed a sentiment analysis model with an accuracy improvement of 15%"
+      - "Led a team of data scientists in building a recommendation system that increased user engagement by 20%"
+  - title: "Object Detection"
+    description: "This project aimed to develop a mobile app that uses deep learning techniques, specifically Convolutional Neural Networks (CNNs), to identify objects in images captured by the user's smartphone camera."
+    technologies:
+      - python
+      - django
+      - keras
+    methodologies: 
+      - agile
+      - scrum
+      - kanban  
+    archievement:
+      - "Developed a sentiment analysis model with an accuracy improvement of 15%"
+      - "Led a team of data scientists in building a recommendation system that increased user engagement by 20%"
+
+archievement:
+      - "Developed a sentiment analysis model with an accuracy improvement of 15%"
+      - "Led a team of data scientists in building a recommendation system that increased user engagement by 20%"
