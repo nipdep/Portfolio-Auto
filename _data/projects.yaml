@@ -1,0 +1,20 @@
+docs_list_title: ACME Documentation
+docs:
+
+- title: Project 1
+  type: projects
+  description: This is the description for Project 1.
+  image: assets/images/pic06.jpg
+  url: /projects/template/project_1
+
+- title: Project 2
+  type: projects
+  description: This is the description for Project 2.
+  image: assets/images/pic06.jpg
+  url: /projects.html
+
+- title: Project 3
+  type: projects
+  description: This is the description for Project 3.
+  image: assets/images/pic06.jpg
+  url: /projects.html

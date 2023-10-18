@@ -1,0 +1,22 @@
+title: "Plant Pathology 2020 - FGVC7"
+organizer: Kaggle
+year: "August 2020"
+place: Winners 
+team: "S. Bhunia, S. Roy, A. Roy Chowdhury, S. Pal, S. Banerjee, S. Chaudhuri"
+code: # 
+paper: #
+
+description: "This project aimed to develop a mobile app that uses deep learning techniques, specifically Convolutional Neural Networks (CNNs), to identify objects in images captured by the user's smartphone camera."
+technologies:
+  - python
+  - django
+  - keras
+methodologies: 
+  - agile
+  - scrum
+  - kanban  
+
+archievement:
+  - "Developed a sentiment analysis model with an accuracy improvement of 15%"
+  - "Led a team of data scientists in building a recommendation system that increased user engagement by 20%"
+

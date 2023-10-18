@@ -1,0 +1,20 @@
+title: "GeoRTNet: Geometric Perception based Efficient Text Recognition"
+date: "March 2021"
+venue: "IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)"
+status: "published"
+authors: "S. Bhunia, S. Roy, A. Roy Chowdhury, S. Pal, S. Banerjee, S. Chaudhuri"
+keyword: "Text Recognition, Scene Text Recognition, Text Detection, Text Recognition, Text Rectification"
+code: #
+paper: #
+
+image: https://hhsbanner.com/wp-content/uploads/2019/03/victoria_falls-900x300.jpg
+abstract: "This project aimed to develop a mobile app that uses deep learning techniques, specifically Convolutional Neural Networks (CNNs), to identify objects in images captured by the user's smartphone camera."
+contributions:
+  - pre-trained CNN models like MobileNetV2
+  - fine-tuned them on a custom dataset
+  - optimized the models for mobile devices
+
+lessons:
+  - Proficiency in deep learning
+  - real-time image processing
+  - model optimization

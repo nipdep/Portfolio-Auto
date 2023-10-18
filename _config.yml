@@ -5,16 +5,16 @@ plugins:
 title: Personal
 subtitle: Portfolio
 email: noname@gmail.com
-description: 'Innovating with Intelligence: My AI Odyssey.'
+description: 'Portfolio description'
 baseurl: "/forty-jekyll-theme" # the subpath of your site, e.g. /blog
 url: # the base hostname & protocol for your site
 author:
-street_address: Wethara
-city: Polgasowita
-state: Western
-zip_code: 10320
-country: Sri Lanka
-phone: (+94) 71 190 8140
+street_address: 
+city: 
+state: 
+zip_code: 
+country: 
+phone: 
 
 # homepage tiles
 tiles-source: pages # accepts "posts" or "pages"
@@ -25,12 +25,12 @@ tiles-count: 6
 # Icons are not shown if value is empty
 # You need to restart jekyll for changes to have an effect
 socials:
-  GitHub: https://github.com/nipdep
+  GitHub: 
   GitLab:
-  Google-Plus: https://plus.google.com/u/0/+AndrewBanchich
+  Google-Plus: 
   Instagram:
-  LinkedIn: https://www.linkedin.com/in/nipun-deelaka/?originalSubdomain=lk
-  Twitter: https://twitter.com/andrewbanchich
+  LinkedIn: 
+  Twitter: 
   Facebook:
   Slack:
 
