@@ -1,13 +1,14 @@
 ---
 layout: detail
-title: "Archievement-1"
-description: "Archievement generate by template"
+title: "Image Recognition System"
+description: "Our team developed an image recognition system that uses deep learning techniques"
 image: assets/images/pic06.jpg
-categories: archievements
-type: archievement
+categories: achievements
+type: achievement
 permalink: /:categories/:title
 ---
-{% assign arch = site.data.archievements.template %}
+
+{% assign arch = site.data.achievements.achievement_1 %}
 <div id="main">
 	<section id="one">
         <div class="inner no-padding" >

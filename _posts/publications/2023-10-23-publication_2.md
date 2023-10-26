@@ -1,14 +1,14 @@
 ---
 layout: detail
-title: "Publication-1"
-description: "Publication generate by template"
+title: "Semantic Segmentation for Autonomous Driving"
+description: "Our work focuses on semantic segmentation for autonomous vehicles"
 image: assets/images/pic06.jpg
 categories: publications
 type: publication
 permalink: /:categories/:title
 ---
 
-{% assign pub = site.data.publications.template %}
+{% assign pub = site.data.publications.publication_1 %}
 <div id="main">
     <section id="one">
         <div class="inner no-padding" >
