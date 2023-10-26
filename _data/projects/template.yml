@@ -1,0 +1,29 @@
+status: completed
+type: Deep Learning
+area: Computer Vision
+role: Machine Learning Engineer
+
+description: "This project is about the development of a deep learning model for the detection of the presence of a person in a given image. The model is based on a convolutional neural network (CNN) and is trained on a dataset of images of people. The model is able to detect the presence of a person in an image with an accuracy of 99.9%."
+features:
+  - pre-trained model
+  - fine-tuned model
+  - optimized model
+  
+technologies:
+  - python
+  - django
+  - keras
+
+methodologies:
+  - agile
+  - scrum
+  - kanban
+
+visualizations:
+  - https://hhsbanner.com/wp-content/uploads/2019/03/victoria_falls-900x300.jpg
+  - https://blog.cognifit.com/wp-content/uploads/2019/11/hiking-900x300.jpg
+  - https://travelfree.info/wp-content/uploads/2018/02/croatia-waterfall-in-deep-forest-of-Cr-12755165-900x300.jpg
+lessons:
+  - Proficiency in deep learning
+  - real-time image processing
+  - model optimization

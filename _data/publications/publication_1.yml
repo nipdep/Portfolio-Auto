@@ -1,0 +1,20 @@
+title: "Efficient Object Detection with YOLOv4"
+date: "July 2020"
+venue: "International Conference on Computer Vision (ICCV)"
+status: "published"
+authors: "A. Gupta, B. Patel, C. Johnson, D. Lee"
+keyword: "Object Detection, YOLO, Computer Vision, Real-time Detection"
+code: "https://github.com/yourusername/yolov4"
+paper: "https://example.com/papers/yolov4.pdf"
+
+image: https://hhsbanner.com/wp-content/uploads/2019/03/victoria_falls-900x300.jpg
+abstract: "We present YOLOv4, an efficient and accurate object detection system. It outperforms previous state-of-the-art methods, achieving real-time object detection on resource-constrained devices."
+contributions:
+  - Developed YOLOv4 architecture
+  - Achieved state-of-the-art object detection performance
+  - Implemented real-time detection for various applications
+
+lessons:
+  - Advanced object detection techniques
+  - Model architecture design
+  - Real-time image processing
