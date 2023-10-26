@@ -2,10 +2,10 @@ plugins:
   - jekyll-assets
 
 # site settings
-title: John Doe
-subtitle: Portfolio
+title: John 
+subtitle: Doe
 email: johndoe@example.com
-description: 'Experienced web developer with a passion for creating engaging user experiences.'
+description: 'Personal Portfolio'
 baseurl: "/forty-jekyll-theme" # the subpath of your site, e.g. /blog
 url: # the base hostname & protocol for your site
 author:

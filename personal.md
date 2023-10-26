@@ -5,40 +5,34 @@ image: assets/images/pic02.jpg
 nav-menu: true
 order: 1
 ---
-
+{% assign data = site.data.personal %}
 <!-- Main -->
 <div id="main" class="alt">
 	<!-- Two -->
 	<section id="one">
 		<div class="inner no-padding">
+			<header class="major">
+				<h1>Me ?</h1>
+			</header>
+			<div>
+				<p class='actions'>{{ data.description }}</p>
+			</div>
 			<div class="row">
 				<div class="6u 12u$(small)">
-					<header class="major">
-						<h1>Me ?</h1>
-					</header>
 					<div class="table-container">
 					<table>
+						{% for d in data.details %}
 						<tr>
-						<td class="first-column"><a href="#" class="button special small">Name</a></td>
-						<td class="second-column"><a href="#" class="button small disable">Pathirage Nipun Deelaka</a></td>
+							<td class="first-column"><a href="#" class="button special small disable">{{ d.key }}</a></td>
+							<td class="second-column"><a href="#" class="button small disable">{{ d.value }}</a></td>
 						</tr>
-						<tr>
-						<td class="first-column"><a href="#" class="button special small">Occupation</a></td>
-						<td class="second-column"><a href="#" class="button small disable">Machine Learning Engineer</a></td>
-						</tr>
-						<tr>
-						<td class="first-column"><a href="#" class="button special small">Education</a></td>
-						<td class="second-column"><a href="#" class="button small disable">UoM Undergraduate</a></td>
-						</tr>
+						{% endfor %}
 					</table>
 					</div>
 				</div>
 				<div class="6u$ 12u$(small)">
-					<header class="major">
-						<h1>Simply</h1>
-					</header>
-					<div>
-						<p>"I am a self-driven recent graduate, deeply immersed in the world of deep learning and data science, equipped with a strong technical foundation. My passion lies in constantly challenging myself, stepping out of my comfort zone, and seizing every opportunity to acquire new knowledge and advancements in the realm of artificial intelligence."</p>
+					<!-- <h3>Technologies</h3> -->
+					<div class='logos-container'>
 					</div>
 				</div>
 			</div>
@@ -51,13 +45,21 @@ order: 1
 					<header class="major">
 						<h1>Fields of Interest</h1>
 					</header>
-					<p><a href="#" class="button small disable">Machine Learning</a> <a href="#" class="button small disable">Deep Learning</a><a href="#" class="button small disable">Computer Vision</a><a href="#" class="button small disable">Natural Language Processing</a><a href="#" class="button small disable">Explainable AI</a><a href="#" class="button small disable">Causal ML</a></p>
+					<p class='actions'>
+						{% for d in data.fields_of_interest %}
+						<a href="#" class="button small disable">{{ d }}</a>
+						{% endfor %}
+					</p>
 				</div>
 				<div class="6u$ 12u$(small)">
 					<header class="major">
 						<h1>Soft Skills</h1>
 					</header>
-					<p><a href="#" class="button small disable">Communication</a><a href="#" class="button small disable">Critical Thinking</a><a href="#" class="button small disable">Problem Solving</a><a href="#" class="button small disable">Time Management</a></p>
+					<p class='actions'>
+						{% for d in data.soft_skills %}
+						<a href="#" class="button small disable">{{ d }}</a>
+						{% endfor %}
+					</p>
 				</div>
 			</div>
 		</div>
@@ -67,18 +69,17 @@ order: 1
 			<header class="major">
 				<h1>Certificates</h1>
 			</header>
-			<!-- Content -->
-			<!-- <h2 id="content">Me ?</h2> -->
 			<ul class="fa-ul">
-				<li><i class="fa-li fa fa-check-square"></i>Deep Learning Specialization : DeepLearning.AI</li>
-				<li><i class="fa-li fa fa-check-square"></i>Tensorflow Developer Specialization : DeepLearning.AI</li>
-				<li><i class="fa-li fa fa-check-square"></i>Fundamentals of Scalable Data Science : IBM</li>
-				<li><i class="fa-li fa fa-check-square"></i>Probabilistic Graphical Model part-1 [Master's course] : Stanford University</li>
+				{% for d in data.certificates %}
+				<li>
+					<i class="fa-li fa fa-check-square"></i>{{ d.title }}
+					<a href="#">
+						<i class="fas fa-arrow-right"></i>
+						{{ d.link }}
+					</a>
+				</li>
+				{% endfor %}
 			</ul>
 		</div>
 	</section>
 </div>
-
-
-
-
