@@ -1,8 +1,8 @@
 ---
-title: Experience
 layout: landing
+title: Experience
 description: 'From Intern to Expert: My Professional Evolution'
-image: assets/images/pic04.jpg
+image: assets/images/experience_pic1.jpg
 nav-menu: true
 order: 4
 ---
@@ -14,24 +14,28 @@ order: 4
 <section id="two" class="spotlights">
 	{% for post in site.posts %}
 		{% if post.type == 'experience' %}
-			<section>
-				<div class="thumbnail">
-					<a href="{{ site.baseurl }}{{ post.url }}" class="image">
-						<img src="{% link {{ post.image }} %}" alt="" data-position="center center" />
-					</a>
-				</div>
-				<div class="content">
-					<div class="inner">
-						<header class="major">
-							<h3>{{ post.title }}</h3>
-						</header>
-						<p>{{ post.description }} {{ post.categories }}</p>
-						<ul class="actions">
-							<li><a href="{{ site.baseurl }}{{ post.url }}" class="button">Learn more</a></li>
-						</ul>
-					</div>
-				</div>
-			</section>
+			<section class="post">
+                <header class="note-header">
+                    <h2 class="post-title">
+                        <a href="{{ post.url | relative_url }}">
+                            {{ post.title | escape }}
+                        </a>
+                    </h2>
+                    <p class="post-meta">
+                        Tagged:
+                        <span>
+                            {% for tag in post.tags %}
+                                <a href="{{site.baseurl}}/tags/#{{ tag }}">#{{ tag }}</a>
+                            {% endfor %}
+                        </span>
+                    </p>
+                </header>
+                <div class="post-description">
+                    <p>
+                        <em>{{ post.description | strip_html | escape | truncate: 300}}</em>
+                    </p>
+                </div>
+            </section>
 		{% endif %}
 	{% endfor %}
 </section>

@@ -1,13 +1,6 @@
-# ignore cache files
 _site/
 .sass-cache/
-.jekyll-cache
+.jekyll-cache/
 .jekyll-metadata
-# ignore the output of the jekyll build
-Gemfile.lock
-*.gem
-# ignore ide files
-.vscode/
-.idea/
 
-
+.DS_Store

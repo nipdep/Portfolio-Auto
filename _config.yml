@@ -1,40 +1,40 @@
+# Build settings
 plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
   - jekyll-assets
+  
+title: John Doe
+email: johndoe@example.com
+description: 'Personal Portfolio'
+baseurl: "/portfolio" # the subpath of your site, e.g. /blog
+url: 
+portfolio_url: https://github.com/johndoe
+cv_url: assets/pdf/cv.pdf
+repository: nipdep/portfolio
+twitter: https://twitter.com/johndoe
+github: 
 
-# site settings
-title: Personal
-subtitle: Portfolio
-email: noname@gmail.com
-description: 'Innovating with Intelligence: My AI Odyssey.'
-baseurl: "/forty-jekyll-theme" # the subpath of your site, e.g. /blog
-url: # the base hostname & protocol for your site
-author:
-street_address: Wethara
-city: Polgasowita
-state: Western
-zip_code: 10320
-country: Sri Lanka
-phone: (+94) 71 190 8140
+header_image: assets/images/profile_pic3.png
 
-# homepage tiles
-tiles-source: pages # accepts "posts" or "pages"
-tiles-count: 6
+theme_config:
+  appearance: "dark" # can be "light", "dark" or "auto"
+  appearance_toggle: true # if appearance can be switched by user
 
-# social settings (key must match name of font awesome icon)
-# see https://fontawesome.com/icons?d=gallery&p=2&s=brands
-# Icons are not shown if value is empty
-# You need to restart jekyll for changes to have an effect
-socials:
-  GitHub: https://github.com/nipdep
-  GitLab:
-  Google-Plus: https://plus.google.com/u/0/+AndrewBanchich
-  Instagram:
-  LinkedIn: https://www.linkedin.com/in/nipun-deelaka/?originalSubdomain=lk
-  Twitter: https://twitter.com/andrewbanchich
-  Facebook:
-  Slack:
+google_analytics:
+  tracking_id: G-H2K6ZWCRB5
 
-# build settings
+comments: true
+disqus: purelog-jekyll
+
+author: John Doe
+author_bio: >-
+  John Doe is a software engineer and data scientist. He is currently pursuing a Master's degree in Computer Science at the University of Toronto. His research interests include deep learning, computer vision, and natural language processing.
+author_pic: https://brennanbrown.ca/img/avatar.png
+paginate: 4
+paginate_path: "/:num/"
+
 markdown: kramdown
 
 sass:
@@ -43,8 +43,8 @@ sass:
 assets:
   baseurl: /assets
 
+# Exclude from processing.
 exclude:
-- "*.gemspec"
-- LICENSE.md
-- CONTRIBUTING.md
-- README.md 
+  - ".jekyll-cache"
+  - "Gemfile"
+  - "Gemfile.lock"
