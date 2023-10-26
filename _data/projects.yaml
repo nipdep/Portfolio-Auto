@@ -5,7 +5,7 @@ docs:
   type: projects
   description: This is the description for Project 1.
   image: assets/images/pic06.jpg
-  url: /projects/template/project_1
+  url: experience/exp_2
 
 - title: Project 2
   type: projects

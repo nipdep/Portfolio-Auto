@@ -2,10 +2,10 @@ plugins:
   - jekyll-assets
 
 # site settings
-title: Personal
+title: John Doe
 subtitle: Portfolio
-email: noname@gmail.com
-description: 'Portfolio description'
+email: johndoe@example.com
+description: 'Experienced web developer with a passion for creating engaging user experiences.'
 baseurl: "/forty-jekyll-theme" # the subpath of your site, e.g. /blog
 url: # the base hostname & protocol for your site
 author:
@@ -25,12 +25,12 @@ tiles-count: 6
 # Icons are not shown if value is empty
 # You need to restart jekyll for changes to have an effect
 socials:
-  GitHub: 
+  GitHub: https://github.com/johndoe
   GitLab:
   Google-Plus: 
   Instagram:
-  LinkedIn: 
-  Twitter: 
+  LinkedIn: https://www.linkedin.com/in/johndoe
+  Twitter: https://twitter.com/johndoe
   Facebook:
   Slack:
 
