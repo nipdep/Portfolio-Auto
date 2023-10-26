@@ -1,0 +1,27 @@
+title: Machine Learning Engineer
+company: Acme AI Innovations
+employment_type: Full-time
+employment_period: 2020-Present
+location: New York, NY
+description: "I work as a Machine Learning Engineer at Acme AI Innovations, where I focus on building machine learning models for natural language processing tasks. My role involves data preprocessing, model development, and optimizing the performance of NLP models. I actively collaborate with interdisciplinary teams to deploy ML solutions for various projects."
+projects:
+  - title: "Language Translation Model"
+    description: "Developed a state-of-the-art language translation model with a 20% improvement in translation accuracy."
+    technologies:
+      - python
+      - PyTorch
+      - transformers
+    methodologies:
+      - Agile
+      - Scrum
+  - title: "Speech Recognition System"
+    description: "Built a speech recognition system that achieved real-time performance for voice commands."
+    technologies:
+      - python
+      - flask
+      - huggingface
+    methodologies:
+      - Kanban
+achievements:
+  - "Led the development of a highly accurate language translation model."
+  - "Contributed to the successful deployment of a real-time speech recognition system."
