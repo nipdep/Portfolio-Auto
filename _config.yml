@@ -8,7 +8,7 @@ plugins:
 title: John Doe
 email: johndoe@example.com
 description: 'Personal Portfolio'
-baseurl: "/portfolio" # the subpath of your site, e.g. /blog
+baseurl: "/Portfolio-Auto" # the subpath of your site, e.g. /blog
 url: 
 portfolio_url: https://github.com/johndoe
 cv_url: assets/pdf/cv.pdf
