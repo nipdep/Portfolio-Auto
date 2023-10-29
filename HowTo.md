@@ -63,145 +63,53 @@ So.. that what it take to deploy at a your commit, and now magic is gone.
 > here theme are defined by branches of the github repo, specifically branches with name starting from `theme/<theme-name>`
 __Preview__ 
 > can be simply done just by looking at screen-shots in theme `readme` page
+> when you select the theme, then you open and _pull request_ from you selected theme branch to `dev` branch.
 
 > or, you can deploy theme portfolio test it out.
  
 
 #### [step-4] add your details
 First, important file & folders to learn
-1. `_config.yml`
-  > define your website 
+1. `_config.yml` 
+  > define your website configuration
+  * website title
+  * portfolio description
+  * base-url, `"/Portfolio-Auto"` should be same as the your github repo name
+  * contact information; phone, address
+  * social media information; github, LinkedIn, Facebook, Slack, Instagram
+  
+2. `index.md`
+   > root or the home page of your portfolio
+   * nothing important from _content_ aspect
+   * but the page layout should be in `home` 
+3. `Gemfile`
+   > jekyll website build file
+   * again nothing much to change
+4. `personal.md`
+   > your personal information summary 
+   * all the information defined in the `_data/personal.yaml`
+   * where you can add __description__, __fields_of_interest__, __soft_skills__, __certificates__
+   * also, you can add key-value paired information in __details__
+5. routing pages, `projects.md`, `publications.md`, `experience.md`, `achievements.md`
+   > these pages contains tag information, routings to all details posts
+   * nothing to change
+6. post pages, `_posts/*` all the `.md` files
+   > detail of the post
+   * all the posts should be in particular directory in `_posts` as  `post.type`
+   * you just have only have to duplicate existing `.md` file under the same directory and change the _front-matter_ accordingly. i.e. except `layout`, `categories`, `type` and `permalink`
+   * and `{% assign pub = site.data.publications.<project-name> %}`
+   * all the post name should be in `data-nametag.md`, example: `2023-10-23-project_1.md`
+7. post data pages, `_data/*` all the `.yml` files
+   > files that contains all the details about you endeavors and only place you truly have to put effort into
+   * all the posts should be in particular directory in `_data` as  `post.type`
+   * if you are going with current information point in `.yml` files, just duplicate and set file name in `<project-name>.yml`, assuming there will be not duplicate project names found
+   * then you just change the actual information under each key.
+   * __we strongly recommend you not to add or change keys in those `.yml` files__
+   * _for any conciliation you need to add information under new tag, you can do it but it has to taken care in related and all the other post files in `_posts` directory.
+   * checkout _github_ `Wiki` on [portfolio-auto](https://github.com/nipdep/Portfolio-Auto/wiki) example of advance operations
+   * __all the value names under `technologies` key in any `.yml` file should be in `assets/images/logos` in same name formatting
 
----
-
-# Home page
-
-#### Site description and Landing Title
-![Alt text](image-3.png)
-As you have checkout the portfolio already, the very first thing you saw was the home page. It is the first thing whoever visits your portfolio sees. So obviously it has to look good and catchy.
-
-To do any changes to the home of your portfolio, head to index.md in the root of your application.
-The home page was generated from the index.md file.
-There you can see the front matter(the part betweeen tripe-dashed lines) as follows
-
-```
----
-layout: home
-title: Home
-landing-title: "Hi, I'm WhoEver"
-description: null
-image: null
-author: null
-show_tile: false
----
-```
-
-We can change the values that are next to colons(:),....but for now let's change only landing-title variable.
-
-Ofcourse we can put anything to show in large bold letters when the site loads but for now let us stick to changing "I'm Whoever" to "I'm your-name".
-
-
-To  change the description that is shown under the landing -title can be changed by chnaging descrption variable of the config.yml file.
-
-#### Site Title and Subtitle
-![Alt text](image-2.png)
-
-To change this site title and subtitle head to personal.md front matter. There we can see
-
-```
-title: Personal
-subtitle: Portfolio
-```
-Change it however you like.
-
-# Personal Information
-
-```
-title: Personal
-subtitle: Portfolio
-email: my.email@gmail.com
-description: 'portfolio description'
-baseurl: "/forty-jekyll-theme" # the subpath of your site, e.g. /blog
-url: # the base hostname & protocol for your site
-author:
-street_address:
-city: 'NY'
-state: 
-zip_code: 
-country: 'USA'
-phone: '+0000000'
-```
-
-The info that are shown in the bottom of the home page as the personal info such as email address, phne number, address can be changed in the personal.md file front matter.
-
-![Alt text](image-5.png)
-
-# Pubications
-
-The posts under the publications folder is shown here.
-In the front matter of the publications.md we can change the decrption and the image to customize the web page.
-
-Under publications folder there is the template file in markdown.
-Customizing it accoriding to my needs is really easy.
-First I have to create a copy of the template file and change the data accordingly.
-
-OK. That's really easy. But what if I have two or more publcations to show as a seperate page? Just do the same procedure..duplicate the publications template or the page you created and change the details inside it as accordingly.
-
-The template cosists of basic info that we need to include such as
-  - abstract
-  - Key information
-  - Lessons learned
-
-
-# Archievements
-Same as above. Create your own pages from the tempate that is avalable.
-
-Here we can customize 
-  - Basic info about the achievement
-  - Description
-  - Technologies and Methodologies used
-
-# Experiences
-Yes...You guessed it correct. Same procedure. And don't forget to remove the template file from the folder otherwise it would show up in our site.
-
-This page template consists of following areas to fill
-
-  - Basic info such as the company, job title, time period..etc
-  - Description
-  - Collaborated Projects
-
-# Projects
-Same boring procedure to create the pages.
-
-And we got the space to fill
-  - Basc info about project such as status, tye, area, link to the code...
-  - Description
-  - Features
-  - Technologies
-  - Methodologies
-  - Project Visualization
-  - Lessons Learned
-
-# Personal Info page
-
-To change the personal info page which is depicted in the "Who am I" tile, we have change the details in the persoanl.md
-Oh these templates are making my life easier.
-It already got the fields
- - Myself
- - A space to describe my self and
- - Fields of Interest
- - Soft Skills
- - Certificates
-
-
-# All done?
-
-Now we are ready to see how  the final product looks like. You
-
-In the terminal run
-
-```
-bundle exec run jekyll
-```
-
-And our page will be visible in the [link](http://127.0.0.1:4000/forty-jekyll-theme/)
+### [step-5] commit and deploy you portfolio site 
+> if you following fully online way, you just have to push commit and check to deployment. 
+> as a next step you could create a _pull request_ from `dev` to `main` branch.
+> when you working on local and then follow [the wiki](https://github.com/nipdep/Portfolio-Auto/wiki)
