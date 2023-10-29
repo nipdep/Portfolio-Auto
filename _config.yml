@@ -2,11 +2,11 @@ plugins:
   - jekyll-assets
 
 # site settings
-title: Personal
-subtitle: Portfolio
-email: noname@gmail.com
-description: 'Portfolio description'
-baseurl: "/forty-jekyll-theme" # the subpath of your site, e.g. /blog
+title: John 
+subtitle: Doe
+email: johndoe@example.com
+description: 'Personal Portfolio'
+baseurl: "/Portfolio-Auto" # the subpath of your site, e.g. /blog
 url: # the base hostname & protocol for your site
 author:
 street_address: 
@@ -16,23 +16,19 @@ zip_code:
 country: 
 phone: 
 
-# homepage tiles
-tiles-source: pages # accepts "posts" or "pages"
-tiles-count: 6
-
-# social settings (key must match name of font awesome icon)
-# see https://fontawesome.com/icons?d=gallery&p=2&s=brands
-# Icons are not shown if value is empty
-# You need to restart jekyll for changes to have an effect
 socials:
-  GitHub: 
+  GitHub: https://github.com/johndoe
   GitLab:
   Google-Plus: 
   Instagram:
-  LinkedIn: 
-  Twitter: 
+  LinkedIn: https://www.linkedin.com/in/johndoe
+  Twitter: https://twitter.com/johndoe
   Facebook:
   Slack:
+
+# homepage tiles
+tiles-source: pages # accepts "posts" or "pages"
+tiles-count: 6
 
 # build settings
 markdown: kramdown

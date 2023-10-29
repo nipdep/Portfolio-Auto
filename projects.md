@@ -27,7 +27,7 @@ order: 3
 			<section>
 				<div class="thumbnail">
 					<a href="{{ site.baseurl }}{{ post.url }}" class="image">
-						<img src="{% link {{ post.image }} %}" alt="" data-position="center center" />
+						<img src="{{site.baseurl}}/{{ post.image }}" alt="" data-position="center center" />
 					</a>
 				</div>
 				<div class="content">

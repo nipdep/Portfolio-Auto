@@ -1,13 +1,14 @@
 ---
 layout: detail
-title: "Archievement-1"
-description: "Archievement generate by template"
+title: "E-commerce Recommendation System"
+description: "Our team worked on a recommendation system for an e-commerce platform using collaborative filtering"
 image: assets/images/pic06.jpg
-categories: archievements
-type: archievement
+categories: achievements
+type: achievement
 permalink: /:categories/:title
 ---
-{% assign arch = site.data.archievements.template %}
+
+{% assign arch = site.data.achievements.achievement_2 %}
 <div id="main">
 	<section id="one">
         <div class="inner no-padding" >
@@ -52,7 +53,7 @@ permalink: /:categories/:title
 					<h3>Technologies</h3>
 					<div class='logos-container'>
                         {% for tech in arch.technologies %}
-						<img src="{% link assets/images/logos/{{ tech }}.png %}" alt="Logo 1" class="logos">
+						<img src="{{site.baseurl}}/assets/images/logos/{{ tech }}.png" alt="Logo 1" class="logos">
                         {% endfor %}
 					</div>
 				</div>

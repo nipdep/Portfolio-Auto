@@ -8,10 +8,12 @@ features:
   - pre-trained model
   - fine-tuned model
   - optimized model
+  
 technologies:
   - python
   - django
   - keras
+
 methodologies:
   - agile
   - scrum

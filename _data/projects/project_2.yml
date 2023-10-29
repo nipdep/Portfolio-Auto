@@ -1,0 +1,31 @@
+status: completed
+type: Deep Learning
+area: Computer Vision
+role: Machine Learning Engineer
+
+description: "This project involves the creation of a facial recognition system using deep learning techniques. The model employs a custom-built convolutional neural network (CNN) and is trained on a vast dataset of facial images. It boasts an impressive recognition accuracy of 98%."
+
+features:
+  - Custom CNN architecture
+  - Facial recognition capabilities
+  - Real-time processing
+  
+technologies:
+  - python
+  - keras
+  - tf
+
+methodologies:
+  - Agile
+  - Scrum
+  - Kanban
+
+visualizations:
+  - https://hhsbanner.com/wp-content/uploads/2019/03/victoria_falls-900x300.jpg
+  - https://blog.cognifit.com/wp-content/uploads/2019/11/hiking-900x300.jpg
+  - https://travelfree.info/wp-content/uploads/2018/02/croatia-waterfall-in-deep-forest-of-Cr-12755165-900x300.jpg
+
+lessons:
+  - Expertise in deep learning for facial recognition
+  - Real-time image processing
+  - Model fine-tuning for better accuracy

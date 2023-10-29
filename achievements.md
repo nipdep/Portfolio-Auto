@@ -13,11 +13,11 @@ order: 5
 <!-- Two -->
 <section id="two" class="spotlights">
 	{% for post in site.posts %}
-		{% if post.type == 'archievement' %}
+		{% if post.type == 'achievement' %}
 			<section>
 				<div class="thumbnail">
 					<a href="{{ site.baseurl }}{{ post.url }}" class="image">
-						<img src="{% link {{ post.image }} %}" alt="" data-position="center center" />
+						<img src="{{site.baseurl}}/{{ post.image }}" alt="" data-position="center center" />
 					</a>
 				</div>
 				<div class="content">

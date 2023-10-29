@@ -65,6 +65,13 @@
 	// 	border-width: 1px;
 	// }
 
+	.center-style {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%; /* Optional: Adjust the height as needed */
+	  }
+
 	.tag-container {
 		text-align: center;
 	}
