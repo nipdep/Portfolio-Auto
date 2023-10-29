@@ -53,7 +53,7 @@ permalink: /:categories/:title
 					<h3>Technologies</h3>
 					<div class='logos-container'>
                         {% for tech in arch.technologies %}
-						<img src="{% link assets/images/logos/{{ tech }}.png %}" alt="Logo 1" class="logos">
+						<img src="{{site.baseurl}}/assets/images/logos/{{ tech }}.png" alt="Logo 1" class="logos">
                         {% endfor %}
 					</div>
 				</div>

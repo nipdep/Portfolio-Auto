@@ -1,5 +1,4 @@
 plugins:
-  - jekyll-seo-tag
   - jekyll-assets
 
 # site settings
