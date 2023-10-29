@@ -72,6 +72,8 @@ First, important file & folders to learn
 1. `_config.yml`
   > define your website 
 
+---
+
 # Home page
 
 #### Site description and Landing Title
