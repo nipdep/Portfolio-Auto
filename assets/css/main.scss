@@ -49,6 +49,15 @@
 			}
 		}
 	}
+	
+	howto_img {
+		max-width: 80%;
+		max-height: 200px;
+		width: auto;
+		height: auto;
+		display: block;
+		margin: 0 auto;
+	}
 
 	a.disable {
 		pointer-events: none;
