@@ -68,20 +68,20 @@ SS - yaml of workflow/SS of action
 glad, you asked. __notice__ following section contains some serious CI/CD concepts. so let's get to it
 the website deployment happens as a `github-page` and that process is automated by `github-action` more specifically, that repo `.github/workflows` directory contained `jekyll.yml` file see every action happens to the repo (__CI__)  and run jekyll site building and deployment (__CD__) on  `git push to main`, `git pull-request main`
 So.. that what it take to deploy at a your commit, and now magic is gone.
-<img src="docs/HowTo/" alt=" "/>
+<!-- <img src="docs/HowTo/" alt=" "/> -->
 
 #### [step-3] select your portfolio theme
 > here theme are defined by branches of the github repo, specifically branches with name starting from `theme/<theme-name>` SS
 __Preview__ 
 > can be simply done just by looking at screen-shots in theme `readme` page SS
 > when you select the theme, then you open and _pull request_ from you selected theme branch to `dev` branch. SS
-<img src="docs/HowTo/themeBranchSelect" alt=" theme selection"/>
+<img src="docs/HowTo/themeBranchSelect.png" alt=" theme selection"/>
 
 > or, you can deploy theme portfolio test it out. Go to settings> github pages> select the theme branch, hit save and go to actions tab.
 <img src="docs/HowTo/buildAndDeploy1.png" alt="github pages "/>
 <img src="docs/HowTo/buildNDeploy2.png" alt="save theme branch "/>
 <img src="docs/HowTo/githubActions.png" alt=" "/>
-<img src="docs/HowTo/pages_buildNDeployment" alt=" "/>
+<img src="docs/HowTo/pages_buildNDeployment.png" alt=" "/>
 <!-- <img src="docs/HowTo/" alt=" "/> -->
 
 #### [step-4] add your details
@@ -120,12 +120,13 @@ First, important file & folders to learn
    <img src="docs/HowTo/posts_folder_structure.png" alt=" "/>
 
 6. post pages, `_posts/*` all the `.md` files
-SS of the expanded folder structure
+
    > detail of the post
    * all the posts should be in particular directory in `_posts` as  `post.type`
    * you just have only have to duplicate existing `.md` file under the same directory and change the _front-matter_ accordingly. i.e. except `layout`, `categories`, `type` and `permalink`
    * and `{% assign pub = site.data.publications.<project-name> %}` SS<- as this is shown
    * all the post name should be in `data-nametag.md`, example: `2023-10-23-project_1.md`
+   <img src="docs/HowTo/postPages.png" alt=" "/>
 
 7. post data pages, `_data/*` all the `.yml` files
    <img src="docs/HowTo/yamlFolderStructure.png" alt=" "/>
