@@ -63,7 +63,7 @@ __What ??__
 <img src="docs/HowTo/fullpageview.png" alt="page view"/>
 
 >> but, Why?
-SS - yaml of workflow/SS of action
+<!-- SS - yaml of workflow/SS of action -->
 
 glad, you asked. __notice__ following section contains some serious CI/CD concepts. so let's get to it
 the website deployment happens as a `github-page` and that process is automated by `github-action` more specifically, that repo `.github/workflows` directory contained `jekyll.yml` file see every action happens to the repo (__CI__)  and run jekyll site building and deployment (__CD__) on  `git push to main`, `git pull-request main`
@@ -71,10 +71,11 @@ So.. that what it take to deploy at a your commit, and now magic is gone.
 <!-- <img src="docs/HowTo/" alt=" "/> -->
 
 #### [step-3] select your portfolio theme
-> here theme are defined by branches of the github repo, specifically branches with name starting from `theme/<theme-name>` SS
+> here theme are defined by branches of the github repo, specifically branches with name starting from `theme/<theme-name>`
+
 __Preview__ 
-> can be simply done just by looking at screen-shots in theme `readme` page SS
-> when you select the theme, then you open and _pull request_ from you selected theme branch to `dev` branch. SS
+> can be simply done just by looking at screen-shots in theme `readme` page 
+> when you select the theme, then you open and _pull request_ from you selected theme branch to `dev` branch.
 <img src="docs/HowTo/themeBranchSelect.png" alt=" theme selection"/>
 
 > or, you can deploy theme portfolio test it out. Go to settings> github pages> select the theme branch, hit save and go to actions tab.
@@ -124,7 +125,8 @@ First, important file & folders to learn
    > detail of the post
    * all the posts should be in particular directory in `_posts` as  `post.type`
    * you just have only have to duplicate existing `.md` file under the same directory and change the _front-matter_ accordingly. i.e. except `layout`, `categories`, `type` and `permalink`
-   * and `{% assign pub = site.data.publications.<project-name> %}` SS<- as this is shown
+   * and `{% assign pub = site.data.publications.<project-name> %}` 
+   <!-- SS<- as this is shown -->
    * all the post name should be in `data-nametag.md`, example: `2023-10-23-project_1.md`
    <img src="docs/HowTo/postPages.png" alt=" "/>
 
@@ -142,7 +144,7 @@ First, important file & folders to learn
 
 ### [step-5] commit and deploy you portfolio site 
 > if you following fully online way, you just have to push commit and check to deployment. 
-SS to show commit in the github
+<!-- SS to show commit in the github -->
 > as a next step you could create a _pull request_ from `dev` to `main` branch.
 > when you working on local and then follow [the wiki](https://github.com/nipdep/Portfolio-Auto/wiki)
 <!-- <img src="docs/HowTo/linkToSite.png" alt=" "/> -->
