@@ -204,6 +204,15 @@ nav {
 img{
 	max-width:100%;
 }
+
+img.raw_img {
+	display: block; /* Make the image a block-level element */
+	margin: 0 auto; /* Center the image horizontally */
+	width: auto; /* Maintain the original width */
+	height: auto; /* Maintain the original height */
+	max-width: 90%; /* Remove maximum width constraint */
+	max-height: none; /* Remove maximum height constraint */
+  }
 	
 #dot{
 	margin:0 auto;
