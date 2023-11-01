@@ -2,114 +2,149 @@
 layout: post
 title: "How To Build you Portfolio"
 description: 'Innovate, Create, Repeat: My Project Journey'
-image: assets/images/pic01.jpg
+image:
 nav-menu: true
 show_tile: false
 order: 6
 ---
-Here you are looking for a easier way to build your portfolio...
-Sweat no more!
-This project has made it much easier to do it than you think.
-Follow along with me.
+Are you searching for an easier way to create your portfolio? Look no further! This project simplifies the process more than you'd imagine. Join me as I guide you through it.
 
-So.. First starts with 
-## Why Portfolio-Auto ?
-even created & you should use in first place. 
+## Why Portfolio-Auto?
 
-> Simply, any web-site creation is a time and money spending process, and when is comes to deploy that site you build, it gets even harder and non-trivial. All is all web site development is no easy task in contrast to is seems and your portfolio build is not far different from it. However, when it comes to personal or organizational portfolio website the essential information to need to display stay the same irrespective of industry or personal preferences. So, here __Portfolio-Auto__ take care of all the redundant processes from website styling to deploying, and make you only to concentrate on adding you details to portfolio theme at preference. Although, this doesn't mean you can customize have you own unique theme.
+Building a website is typically a time-consuming and costly endeavor. When it comes to deploying the site you've built, it becomes even more challenging. Web development isn't as straightforward as it may seem, and creating your portfolio isn't much different. However, the key information to showcase remains consistent, regardless of your industry or personal preferences.
 
-So.. shall we
-## Build you portfolio
+That's where Portfolio-Auto comes in. It streamlines everything, from website styling to deployment, allowing you to focus solely on adding your personal details to your preferred portfolio theme. Don't worry; you can still customize it to create your unique theme.
 
-So.. First, 
-### the general process 
-of selection to deploying the portfolio
+So, are you ready to start building your portfolio?
 
-1. fork this github repo into your personal github account
-2. go to github action and check you new [but sample] portfolio
-3. select the theme at your preference 
-4. add your details
-5. commit back
+### Building Your Portfolio: The General Process
 
-Voilà, now your brand new portfolio it up on to the world 
+Let's go through the general steps, from selection to deployment.
 
-So.. are we finish?
-### the step by step guide
-if you needed, and of course you need.
+1. __Fork this GitHub Repository:__ Start by forking this repository to your personal GitHub account.
+2. __Select Your Preferred Theme:__ Choose the theme that suits your style.
+3. __Add Your Details:__ Fill in your information.
+4. __Commit Back:__ Commit the changes.
+5. __Check Your New (but Sample) Portfolio:__ Head to GitHub Actions and check out your new portfolio.
+Voilà! Your brand-new portfolio is now live and ready to be seen by the world.
 
-#### [step-1] get the code
-> Unlike, usual `github` base development, here you don't even need to clone the repo. But, that may I said, you can do the same thing with good old github clone and push process, and this shall be the only way when you customize the themes.
+But wait, if you need a step-by-step guide, we've got you covered.
 
-> anyway, let's stop the high house and go with the simplest path shall we
-1. go the [portfolio-auto](https://github.com/nipdep/Portfolio-Auto) original repo, hope you are already there 😉
-2. then `fork` the repo onto you personal github user account
-   >> here `fork` process guarantee timely updates when the original __portfolio-auto__ repo get new features or themes
-3. and, you are good to go to the next step
+## Step-by-Step Guide:
 
-> BTW, if you are `pro` or one looking to customize themes
-1. you can follow above `fork` based step as it said
-2. plus, clone the __portfolio-auto__ repo in your personal github account, start work on local.
-3. for the advance operation and local testing follow _github_ `Wiki` on [portfolio-auto](https://github.com/nipdep/Portfolio-Auto/wiki)
+### Step 1: Get the Code
 
-#### [step-2] Checkout your newly deployed portfolio
-__What ??__
-> Oh, yes. you have already deployed you portfolio. But, the little problem is there name is 'John Deo' and that guy is a figment of imagination.
->> but, Why?
-glad, you asked. __notice__ following section contains some serious CI/CD concepts. so let's get to it
-the website deployment happens as a `github-page` and that process is automated by `github-action` more specifically, that repo `.github/workflows` directory contained `jekyll.yml` file see every action happens to the repo (__CI__)  and run jekyll site building and deployment (__CD__) on  `git push to main`, `git pull-request main`
-So.. that what it take to deploy at a your commit, and now magic is gone.
+Unlike traditional GitHub-based development, you don't need to clone the repository here. However, if you plan to customize themes, you can still follow the traditional clone and push process. This is the only way to customize themes.
 
-#### [step-3] select your portfolio theme
-> here theme are defined by branches of the github repo, specifically branches with name starting from `theme/<theme-name>`
-__Preview__ 
-> can be simply done just by looking at screen-shots in theme `readme` page
-> when you select the theme, then you open and _pull request_ from you selected theme branch to `dev` branch.
+Let's take the simpler path:
 
-> or, you can deploy theme portfolio test it out.
- 
+1. Go to the [Portfolio-Auto](https://github.com/nipdep/Portfolio-Auto) original repository (hopefully, you're already there!).
+2. Fork the repository to your personal GitHub user account. This ensures you receive timely updates when the original Portfolio-Auto repository adds new features or themes.
+<img class="raw_img" src="docs\HowTo\fork.png" alt="how to step 2">
 
-#### [step-4] add your details
-First, important file & folders to learn
-1. `_config.yml` 
-  > define your website configuration
-  * website title
-  * portfolio description
-  * base-url, `"/Portfolio-Auto"` should be same as the your github repo name
-  * contact information; phone, address
-  * social media information; github, LinkedIn, Facebook, Slack, Instagram
+3. You're good to proceed to the next step.
+By the way, if you're a pro or someone looking to customize themes:
+
+1. Follow the fork process as mentioned.
+2. Additionally, clone the Portfolio-Auto repository to your personal GitHub account and start working locally.
+<img class="raw_img" src="docs\HowTo\localCode.png" alt="how to step 2">
+
+For advanced operations and local testing, consult the GitHub Wiki on [Portfolio-Auto](https://github.com/nipdep/Portfolio-Auto/wiki).
+
+
+### Step 2: Select Your Portfolio Theme
+When setting up your portfolio, the first step is to choose a theme. Themes are defined by branches in the GitHub repository, specifically branches with names starting with `theme/<theme-name>`.
+<img class="raw_img" src="docs/HowTo/themeBranchSelect.png" alt=" theme selection"/>
+
+#### Preview:
+You can get a preview of a theme in a couple of ways:
+
+1. __GitHub Repository:__ Look at the theme's README page and check for screenshots to get an idea of how your portfolio will look.
+2. __Deploy the Theme:__ Alternatively, you can deploy the theme to your GitHub Pages. To do this, follow these steps:
+   * Go to the repository's "Settings" tab.
+   * In the "GitHub Pages" section, select the theme branch you want to use.
+   * Save your changes and then go to the "Actions" tab to monitor the deployment process.
+<img class="raw_img" src="docs/HowTo/buildAndDeploy1.png" alt="github pages "/>
+<img class="raw_img" src="docs/HowTo/buildNDeploy2.png" alt="save theme branch "/>
+<img class="raw_img" src="docs/HowTo/githubActions.png" alt=" "/>
+<img class="raw_img" src="docs/HowTo/pages_buildNDeployment.png" alt=" "/>
+
+#### Selection:
+When you pick a theme, then you open and _pull request_ from you selected theme branch to `dev` branch.
+
+### Step 3: Add Your Details
+In this step, you'll customize your portfolio to make it uniquely yours. Here are some important files and folders to be aware of:
+
+1. `_config.yml`:
+<img class="raw_img" src="docs/HowTo/config_file.png" alt=" "/>
+
+This file defines your website's configuration. You can customize several aspects, including:
+* Website title
+* Portfolio description
+* Base URL (should match your GitHub repo name)
+* Contact information (phone, address)
+* Social media information (GitHub, LinkedIn, Facebook, Slack, Instagram)
+
+2. `index.md`:
+<img class="raw_img" src="docs/HowTo/index.md.png" alt=" "/>
+
+This is the root or home page of your portfolio. You don't need to change the content, but ensure that the page layout is set to "home."
+
+3. `Gemfile`:
+<img class="raw_img" src="docs/HowTo/gemfile.png" alt=" "/>
+
+The Gemfile is used for building your Jekyll website. There's typically no need to make significant changes here.
+
+4. `personal.md` & `personal.yaml`:
+<img class="raw_img" src="docs/HowTo/personal.md.png" alt=" "/>
+
+This page contains a summary of your personal information. Information from this file is pulled from _data/personal.yaml, where you can add details like:
+* Description
+* Fields of Interest
+* Soft Skills
+* Certificates
+* Key-value paired information under "details"
+<img class="raw_img" src="docs/HowTo/personalYmLnMD.png" alt=" "/>
+
+5. _Routing Pages_ (`projects.md`, `publications.md`, `experience.md`, `achievements.md`):
+These pages provide routes to all the details posts and generally don't require alterations.
+<img class="raw_img" src="docs/HowTo/posts_folder_structure.png" alt=" "/>
+
+6. _Post Pages_ (`_posts/*`):
+These are detailed posts about your projects and achievements. To create new posts, you can:
+* Duplicate an existing `.md` file in the relevant directory.
+* Change the front-matter settings, except for `layout`, `categories`, `type`, and `permalink`.
+* Use `assign pub = site.data.publications.<project-name>` to link your post to a publication.
+* Ensure your post file is named in the `data-nametag.md` format (e.g., `2023-10-23-project_1.md`).
+<img class="raw_img" src="docs/HowTo/postPages.png" alt=" "/>
   
-2. `index.md`
-   > root or the home page of your portfolio
-   * nothing important from _content_ aspect
-   * but the page layout should be in `home` 
-3. `Gemfile`
-   > jekyll website build file
-   * again nothing much to change
-4. `personal.md`
-   > your personal information summary 
-   * all the information defined in the `_data/personal.yaml`
-   * where you can add __description__, __fields_of_interest__, __soft_skills__, __certificates__
-   * also, you can add key-value paired information in __details__
-5. routing pages, `projects.md`, `publications.md`, `experience.md`, `achievements.md`
-   > these pages contains tag information, routings to all details posts
-   * nothing to change
-6. post pages, `_posts/*` all the `.md` files
-   > detail of the post
-   * all the posts should be in particular directory in `_posts` as  `post.type`
-   * you just have only have to duplicate existing `.md` file under the same directory and change the _front-matter_ accordingly. i.e. except `layout`, `categories`, `type` and `permalink`
-   * and `{% assign pub = site.data.publications.<project-name> %}`
-   * all the post name should be in `data-nametag.md`, example: `2023-10-23-project_1.md`
-7. post data pages, `_data/*` all the `.yml` files
-   > files that contains all the details about you endeavors and only place you truly have to put effort into
-   * all the posts should be in particular directory in `_data` as  `post.type`
-   * if you are going with current information point in `.yml` files, just duplicate and set file name in `<project-name>.yml`, assuming there will be not duplicate project names found
-   * then you just change the actual information under each key.
-   * __we strongly recommend you not to add or change keys in those `.yml` files__
-   * _for any conciliation you need to add information under new tag, you can do it but it has to taken care in related and all the other post files in `_posts` directory.
-   * checkout _github_ `Wiki` on [portfolio-auto](https://github.com/nipdep/Portfolio-Auto/wiki) example of advance operations
-   * __all the value names under `technologies` key in any `.yml` file should be in `assets/images/logos` in same name formatting
+7. _Post Data Pages_ (`_data/*`):
+<img class="raw_img" src="docs/HowTo/yamlFolderStructure.png" alt=" "/>
 
-### [step-5] commit and deploy you portfolio site 
-> if you following fully online way, you just have to push commit and check to deployment. 
-> as a next step you could create a _pull request_ from `dev` to `main` branch.
-> when you working on local and then follow [the wiki](https://github.com/nipdep/Portfolio-Auto/wiki)
+These `.yml` files contain details about your endeavors. To add or modify information:
+* Duplicate an existing `.yml` file with a unique name.
+* Update the content under each key as needed.
+* We recommend not adding or changing keys in these files, except for specific needs, which should be addressed in related post files in the `_posts` directory.
+For advanced operations, you can refer to the GitHub Wiki on portfolio-auto for examples.
+
+__Note:__ All the values under the technologies key in any `.yml` file should correspond to files located in `assets/images/logos` with matching file names.
+<img class="raw_img" src="docs/HowTo/technologies_logos.png" alt=" "/>
+
+### Step 4: Commit and Deploy Your Portfolio Site
+If you're following the online approach, deploying your portfolio site is straightforward. Simply commit your changes and check the deployment. Here are the steps:
+1. Commit your changes to your repository.
+2. Verify the deployment process.
+
+If you prefer working locally, you can follow these steps to deploy your site:
+1. Create a pull request from the dev branch to the main branch.
+2. Refer to the wiki for more detailed instructions on local deployment.
+
+### Step 5: Check Your Newly Deployed Portfolio
+Congratulations, your portfolio is now live and accessible. But how did it happen? Let's dive into some essential CI/CD concepts:
+
+The website deployment is powered by GitHub Pages, and this process is automated using GitHub Actions. Specifically, there is a jekyll.yml file in the .github/workflows directory of your repository. This workflow handles both Continuous Integration (CI) and Continuous Deployment (CD).
+
+* __CI:__ It manages various actions that take place within your repository.
+* __CD:__ It builds and deploys your Jekyll site whenever you push changes to the main branch or create a pull request to main.
+
+So, that's the magic behind deploying your portfolio site. It all starts with a commit, and the rest is taken care of by the automated CI/CD pipeline.
