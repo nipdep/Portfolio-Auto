@@ -1,0 +1,20 @@
+title: "Semantic Segmentation for Autonomous Driving"
+date: "November 2019"
+venue: "Conference on Computer Vision and Pattern Recognition (CVPR)"
+status: "published"
+authors: "M. Anderson, P. Singh, K. Johnson"
+keyword: "Semantic Segmentation, Autonomous Driving, Computer Vision"
+code: "https://github.com/yourusername/semantic-segmentation"
+paper: "https://example.com/papers/semantic-segmentation.pdf"
+
+image: https://hhsbanner.com/wp-content/uploads/2019/03/victoria_falls-900x300.jpg
+abstract: "Our work focuses on semantic segmentation for autonomous vehicles, enabling them to understand their environment. We propose a novel segmentation architecture that improves safety and navigation."
+contributions:
+  - Designed a novel segmentation architecture
+  - Demonstrated improved safety and navigation for autonomous vehicles
+  - Open-sourced the code for the research community
+
+lessons:
+  - In-depth understanding of semantic segmentation
+  - Application of computer vision in autonomous systems
+  - Open-source contributions

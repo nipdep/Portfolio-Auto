@@ -1,0 +1,270 @@
+---
+---
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@import 'libs/skel';
+@import 'font-awesome.min.css';
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic');
+
+/*
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+@include skel-breakpoints((
+	xlarge: '(max-width: 1680px)',
+	large: '(max-width: 1280px)',
+	medium: '(max-width: 980px)',
+	small: '(max-width: 736px)',
+	xsmall: '(max-width: 480px)',
+	xxsmall: '(max-width: 360px)'
+));
+
+@include skel-layout((
+	reset: 'full',
+	boxModel: 'border',
+	grid: ( gutters: 2em ),
+	breakpoints: (
+		large: (
+			grid: ( gutters: 1.5em )
+		),
+		small: (
+			grid: ( gutters: 1.25em )
+		)
+	)
+));
+
+@mixin inner {
+	> .inner {
+		@include padding(4em, 0);
+		margin: 0 auto;
+		max-width: _size(inner);
+		width: calc(100% - 6em);
+
+		@include breakpoint(small) {
+			@include padding(3em, 0);
+			width: calc(100% - 3em);
+		}
+	}
+}
+
+p.no_padding,
+h1.no_padding,
+h2.no_padding,
+h3.no_padding {
+  margin: 0 0 0 0;
+}
+
+
+a.disable {
+	pointer-events: none;
+	cursor: default;
+}
+
+// hr {
+// 	display: block;
+// 	margin-top: 0.5em;
+// 	margin-bottom: 0.5em;
+// 	margin-left: 10px;
+// 	margin-right: 10px;
+// 	border-style: inset;
+// 	border-width: 1px;
+// }
+
+img.docs_img {
+	max-width: 80%;
+	max-height: 250px;
+	width: auto;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+img.raw_img {
+	display: block; /* Make the image a block-level element */
+	margin: 0 auto; /* Center the image horizontally */
+	width: auto; /* Maintain the original width */
+	height: auto; /* Maintain the original height */
+	max-width: none; /* Remove maximum width constraint */
+	max-height: none; /* Remove maximum height constraint */
+  }
+
+.center-style {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%; /* Optional: Adjust the height as needed */
+	}
+
+.tag-container {
+	text-align: center;
+}
+
+.tag-container ul {
+	display: inline-block;
+}
+
+.no-padding {
+	padding: 0.2em 0 0.2em 0 !important;
+}
+
+.logos-container {
+	display: flex; /* Display children in a row */
+	justify-content: center; /* Center-align children horizontally */
+	align-items: center; /* Center-align children vertically */
+	flex-wrap: wrap; /* Allow wrapping of items to a new line */
+}
+
+/* Style for individual logo images */
+.logos {
+	width: 60px; /* Adjust the width as needed */
+	margin: 10px; /* Add margin between logos */
+}
+
+/* Blog post title styles */
+.post-title {
+	font-size: 34px; /* Adjust the font size as needed */
+	font-weight: bold;
+	// color: #333; /* Change the color to your preferred text color */
+	text-align: center; /* Center-align the title */
+	margin-bottom: 10px; /* Add spacing at the bottom of the title */
+	text-decoration: none; /* Remove underline by default */
+	}
+
+	@keyframes fade{
+	from{
+		opacity:0.4;
+	}
+	to{
+		opacity:1;
+	}
+	}
+	
+//   body{
+// 	background:#eeeee;
+//   }
+/* Image slider styles */
+	#slider{
+	margin:0 auto;
+	width:80%;
+	overflow:hidden;
+	}
+	
+	.slides{
+	overflow:hidden;
+	animation-name:fade;
+	animation-duration:2s;
+	display:none;
+	}
+	
+	// img{
+	// width:100%;
+	// }
+	
+	#dot{
+	margin:0 auto;
+	text-align:center;
+	}
+	.dot{
+	display:inline-block;
+	border-radius:50%;
+	// background:#d3d3d3;
+	padding:8px;
+	margin:10px 5px;
+	}
+	
+	.active{
+	background:black;
+	}
+	
+	@media (max-width:567px){
+	#slider{
+		width:100%;
+	
+	}
+	}
+
+/* Styles for the table container */
+.table-container {
+	width: 80%; /* Set the width to 80% */
+	margin: 0 auto; /* Center the table horizontally */
+	padding: 0.1em 0.1em; /* Remove space around the table */
+}
+
+/* Styles for the table */
+table {
+	width: 100%;
+	border-collapse: collapse; /* Remove table borders */
+	border-spacing: 0; /* Adjust the spacing between rows as needed */
+	// padding: 0.1em 0.1em !important; /* Remove space around the table */
+}
+
+/* Overriding rule with !important */
+table td {
+	padding: 0.1em 0.1em !important; // Your new padding value
+}
+
+/* Styles for table columns */
+td {
+	padding: 0; /* Add padding to the table cells for spacing */
+	border: none; /* Add a border at the bottom of each cell */
+}
+
+/* Styles for the first column */
+td.first-column {
+	width: 30%; /* Set the width of the first column to 30% */
+	text-align: right; /* Align text in the first column to the left */
+}
+
+/* Styles for the second column */
+td.second-column {
+	width: 70%; /* Set the width of the second column to 70% */
+	text-align: left; /* Align text in the second column to the right */
+}
+
+/* Center the image both horizontally and vertically */
+.thumbnail {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+/* Style the image */
+.thumbnail img {
+	max-width: 100%; /* Ensure the image does not exceed the container's width */
+	height: auto;
+}
+
+
+// Base.
+
+@import 'base/page';
+@import 'base/typography';
+
+// Component.
+
+@import 'components/section';
+@import 'components/form';
+@import 'components/box';
+@import 'components/icon';
+@import 'components/image';
+@import 'components/list';
+@import 'components/table';
+@import 'components/button';
+@import 'components/tiles';
+@import 'components/contact-method';
+@import 'components/spotlights';
+
+// Layout.
+
+@import 'layout/header';
+@import 'layout/banner';
+@import 'layout/main';
+@import 'layout/contact';
+@import 'layout/footer';
+@import 'layout/wrapper';
+@import 'layout/menu';
+
+

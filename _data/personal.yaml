@@ -1,0 +1,37 @@
+details:
+  - key: name
+    value: John Doe
+  - key: occupation 
+    value: Machine Learning Engineer
+  - key: education
+    value: MS in Computer Science
+  - key: research_publications  
+    value: 6
+  - key: active_research  
+    value: 3  
+  - key: working_years
+    value: 5 years
+  - key: completed_projects
+    value: 20
+  - key: active_projects 
+    value: 6
+
+description: "I have gained valuable experience in machine learning and deep learning during my three years as a Machine Learning Engineer. I've contributed to several projects and published research papers. I'm dedicated to continuous learning and staying up-to-date with the latest advancements in artificial intelligence."
+
+fields_of_interest:
+  - Natural Language Processing
+  - Reinforcement Learning
+  - Data Analysis
+  - Statistical Modeling
+
+soft_skills:
+  - Problem Solving
+  - Teamwork
+  - Data Visualization
+
+certificates:
+  - title: "TOEFL Certification"
+    link: https://example.com/toefl-certificate
+  - title: "Deep Learning Specialization : Coursera"
+    link: https://coursera.org/share/3a4e89e5a36f72a7816758a254bde8a2
+

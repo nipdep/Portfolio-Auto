@@ -1,0 +1,20 @@
+title: "E-commerce Recommendation System"
+organizer: ShopTech
+year: "May 2028"
+place: Finalist
+team: "L. Garcia, E. Rodriguez, M. Lopez"
+code: https://github.com/lauragarcia/recommendation-system
+paper: #
+
+description: "Our team worked on a recommendation system for an e-commerce platform using collaborative filtering and matrix factorization techniques. The system was a finalist in the ShopTech AI Challenge."
+technologies:
+  - python
+  - sk_learn
+  - pandas
+methodologies:
+  - agile
+  - kanban
+
+archievement:
+  - "Achieved finalist status in the ShopTech AI Challenge."
+  - "Implemented collaborative filtering algorithms to enhance product recommendations."

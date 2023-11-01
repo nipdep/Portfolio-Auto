@@ -1,0 +1,25 @@
+title: Machine Learning Engineer
+company: XYZ Tech Solutions
+employment_type: Full-time
+employment_period: 2019-2020
+location: San Francisco, CA
+description: "In my role as a Machine Learning Engineer at XYZ Tech Solutions, I focused on creating machine learning models for natural language processing tasks. I was responsible for data preprocessing, model development, and optimizing model performance. I collaborated with cross-functional teams to implement ML solutions for various projects."
+projects:
+  - title: "Chatbot Development"
+    description: "Developed a chatbot using NLP techniques, resulting in a 30% reduction in customer support response times."
+    technologies:
+      - python
+      - tensorflow
+      - spacy
+    methodologies:
+      - Agile
+  - title: "Named Entity Recognition"
+    description: "Designed an NER model that achieved state-of-the-art performance in recognizing entities in text."
+    technologies:
+      - python
+      - huggingface
+    methodologies:
+      - Scrum
+achievements:
+  - "Implemented a chatbot solution that significantly improved customer support efficiency."
+  - "Led the development of a highly accurate NER model."

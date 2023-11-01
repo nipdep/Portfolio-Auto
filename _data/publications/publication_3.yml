@@ -1,0 +1,20 @@
+title: "Language Translation with Transformers"
+date: "January 2021"
+venue: "NeurIPS (Conference on Neural Information Processing Systems)"
+status: "published"
+authors: "S. Patel, K. Lee, J. Kim, R. Gupta"
+keyword: "Machine Translation, Transformers, Natural Language Processing"
+code: "https://github.com/yourusername/transformer-translation"
+paper: "https://example.com/papers/transformer-translation.pdf"
+
+image: https://hhsbanner.com/wp-content/uploads/2019/03/victoria_falls-900x300.jpg
+abstract: "Our research leverages transformer models for language translation. We achieve state-of-the-art results in machine translation tasks, showcasing the power of self-attention mechanisms."
+contributions:
+  - Developed transformer-based translation models
+  - Achieved state-of-the-art translation accuracy
+  - Demonstrated the effectiveness of self-attention mechanisms
+
+lessons:
+  - Deep understanding of transformer models
+  - NLP research and development
+  - Contributing to advancements in machine translation
