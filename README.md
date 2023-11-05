@@ -10,6 +10,11 @@
 
 [![GitHub Actions](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-brightgreen)](https://github.com/nipdep/Portfolio-Auto/actions)
 [![GitHub Pages](https://img.shields.io/badge/Deployment-GitHub%20Pages-blue)](https://yourportfolioURLhere.com)
+---
+## Documentations
+- [Medium Article](https://medium.com/@nipundeelaka/the-easiest-way-to-build-your-portfolio-ab797c42301e)
+
+---
 
 Welcome to Portfolio-Auto, your one-stop solution for effortless portfolio deployment with GitHub Pages and GitHub Actions.
 
