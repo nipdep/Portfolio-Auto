@@ -191,11 +191,12 @@ when you select the theme, then you open and <em>pull request</em> from you sele
 
 <h3 id="step-5-commit-and-deploy-you-portfolio-site">[step-4] commit and deploy you portfolio site</h3>
 <blockquote>
-  <p>if you following fully online way, you just have to push commit and check to deployment. 
-<!-- SS to show commit in the github -->
+  <p>if you following fully online way, you just have to push commit and check to deployment.
+commitchanges
+<img src="docs/HowTo/commitchanges.png" alt="commitchanges"/></p>
 as a next step you could create a <em>pull request</em> from <code class="language-plaintext highlighter-rouge">dev</code> to <code class="language-plaintext highlighter-rouge">main</code> branch.
 when you working on local and then follow <a href="https://github.com/nipdep/Portfolio-Auto/wiki">the wiki</a>
-<!-- <img src="docs/HowTo/linkToSite.png" alt=" "/> --></p>
+
 </blockquote>
 
 <h4 id="step-2-checkout-your-newly-deployed-portfolio">[step-5] Checkout your newly deployed portfolio</h4>
@@ -209,7 +210,8 @@ when you working on local and then follow <a href="https://github.com/nipdep/Por
 <blockquote>
   <blockquote>
     <p>but, Why?
-<!-- SS - yaml of workflow/SS of action --></p>
+<img class="raw_img" src="docs/HowTo/yamlWorkflow.png" alt="yamlWorkflow"></p>
+
   </blockquote>
 </blockquote>
 
