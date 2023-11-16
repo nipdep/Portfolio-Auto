@@ -40,14 +40,14 @@ Let's take the simpler path:
 
 1. Go to the [Portfolio-Auto](https://github.com/nipdep/Portfolio-Auto) original repository (hopefully, you're already there!).
 2. Fork the repository to your personal GitHub user account. This ensures you receive timely updates when the original Portfolio-Auto repository adds new features or themes.
-<img class="raw_img" src="docs\HowTo\fork.png" alt="how to step 2">
+<img class="raw_img" src="docs/HowTo/fork.png" alt="how to step 2">
 
 3. You're good to proceed to the next step.
 By the way, if you're a pro or someone looking to customize themes:
 
 1. Follow the fork process as mentioned.
 2. Additionally, clone the Portfolio-Auto repository to your personal GitHub account and start working locally.
-<img class="raw_img" src="docs\HowTo\localCode.png" alt="how to step 2">
+<img class="raw_img" src="docs/HowTo/localCode.png" alt="how to step 2">
 
 For advanced operations and local testing, consult the GitHub Wiki on [Portfolio-Auto](https://github.com/nipdep/Portfolio-Auto/wiki).
 
@@ -64,17 +64,34 @@ You can get a preview of a theme in a couple of ways:
    * Go to the repository's "Settings" tab.
    * In the "GitHub Pages" section, select the theme branch you want to use.
    * Save your changes and then go to the "Actions" tab to monitor the deployment process.
-<img class="raw_img" src="docs/HowTo/buildAndDeploy1.png" alt="github pages "/>
-<img class="raw_img" src="docs/HowTo/buildNDeploy2.png" alt="save theme branch "/>
+<img class="raw_img" src="docs/HowTo/buildAndDeploy1.png" alt="github pages"/>
+<img class="raw_img" src="docs/HowTo/buildNDeploy2.png" alt="save theme branch"/>
 <img class="raw_img" src="docs/HowTo/githubActions.png" alt=" "/>
 <img class="raw_img" src="docs/HowTo/pages_buildNDeployment.png" alt=" "/>
 
 #### Selection:
 When you pick a theme, then you open and _pull request_ from you selected theme branch to `dev` branch.
+<ss> #PR making
+# pr - how the puhttps
+> Why? @nipdep
 
 ### Step 3: Add Your Details
 In this step, you'll customize your portfolio to make it uniquely yours. Here are some important files and folders to be aware of:
+#### Options to add your data
+1. _VsCode or any other local code editor_:
+   * _clone_ you newly forked repo to local using _git_ or _github desktop_
+   * you are ready to add your data
 
+2. _GitHub Dev, cloud editor_:
+   * press "." (fullstops button) got got to `https://github.dev/<user-name>/Portfolio-Auto`
+   * where you can edit/add file online
+
+3. _Github_:
+   * preferred when you have a quick single file update, specially in deployed `main` branch
+   * not recommended to add/edit multiple file in this way, because here you have to commit at each file
+
+
+#### Important files and directories to notice
 1. `_config.yml`:
 <img class="raw_img" src="docs/HowTo/config_file.png" alt=" "/>
 
@@ -133,18 +150,26 @@ __Note:__ All the values under the technologies key in any `.yml` file should co
 ### Step 4: Commit and Deploy Your Portfolio Site
 If you're following the online approach, deploying your portfolio site is straightforward. Simply commit your changes and check the deployment. Here are the steps:
 1. Commit your changes to your repository.
-2. Verify the deployment process.
-
-If you prefer working locally, you can follow these steps to deploy your site:
-1. Create a pull request from the dev branch to the main branch.
-2. Refer to the wiki for more detailed instructions on local deployment.
+![vs code commit](vscodeCommit.png)
+![Alt text](githubdevCommit.png)
+![Alt text](newPR.png)
+_If you were editing in GitHub_:
+<img class="raw_img" src="docs/HowTo/commitGitHub.png" alt=" "/>
+2. Transfer the updates from 'dev' to the deployment `main` branch
+![Alt text](prInDev.png)
+![Alt text](prInDev2.png)
+> Why? @nipdep
+3. Initiate the deployment
+![Alt text](githubAction.png)
+4. Verify the deployment process.
+![Alt text](linkGithubAction.png)
 
 ### Step 5: Check Your Newly Deployed Portfolio
 Congratulations, your portfolio is now live and accessible. But how did it happen? Let's dive into some essential CI/CD concepts:
 
-The website deployment is powered by GitHub Pages, and this process is automated using GitHub Actions. Specifically, there is a jekyll.yml file in the .github/workflows directory of your repository. This workflow handles both Continuous Integration (CI) and Continuous Deployment (CD).
-
-* __CI:__ It manages various actions that take place within your repository.
-* __CD:__ It builds and deploys your Jekyll site whenever you push changes to the main branch or create a pull request to main.
+>The website deployment is powered by GitHub Pages, and this process is automated using GitHub Actions. Specifically, there is a jekyll.yml file in the .github/workflows directory of your repository. This workflow handles both Continuous Integration (CI) and Continuous Deployment (CD).
+> * __CI:__ It manages various actions that take place within your repository.
+> * __CD:__ It builds and deploys your Jekyll site whenever you push changes to the main branch or create a pull request to main.
+<img class="raw_img" src="docs/HowTo/CICD.png" alt=" "/>
 
 So, that's the magic behind deploying your portfolio site. It all starts with a commit, and the rest is taken care of by the automated CI/CD pipeline.
